@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 640px) {
+  table {
+    display: inline-table !important;
+  }
+
+  thead tr:not(:first-child) {
+    display: none;
+  }
+}
+
+td:not(:last-child) {
+  border-bottom: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#root {
+  min-height: 100%;
+  position: relative;
+}
